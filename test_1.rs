@@ -1,4 +1,5 @@
 use std::fmt::Display;
+use std::collections::HashMap;
 
 #[derive(Debug)]
 struct User{
@@ -20,6 +21,17 @@ impl Rectangle{
 
 
 fn main(){
+    let mut persons = HashMap::new();
+    persons.insert("Abishek", 23);
+    persons.insert("Rahul", 22);
+    persons.insert("Tej", 22);
+    persons.insert("Yang Singh", 22);
+
+    if let Some(person) = persons.get(person){
+        println!("Abishek Scored {}", person)
+    }
+
+
     
     let mut numbers = vec![1,2,3,4,5];
     numbers.push(10);
