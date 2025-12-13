@@ -27,11 +27,17 @@ fn main(){
     persons.insert("Tej", 22);
     persons.insert("Yang Singh", 22);
 
-    if let Some(person) = persons.get(person){
-        println!("Abishek Scored {}", person)
+    if let Some(age) = persons.get("Abishek"){
+        println!("Abishek is {} years old", age);
     }
 
+    println!("Iterating the hash map");
 
+    for(person, age) in &persons {
+        println!("{}: {}",person, age);
+    }
+
+    println!("looking out vectors");
     
     let mut numbers = vec![1,2,3,4,5];
     numbers.push(10);
