@@ -24,7 +24,13 @@ let test = loop{
 };
 
 for i in 1..=6{
-    println!("for loop: {}", i);
+    if i == 2{
+    continue;
+    }
+    if i == 4{
+        break;
+    }
+    println!("{}", i);
 }
 
 
